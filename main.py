@@ -2,8 +2,11 @@
 
 import discord
 from discord.ext import commands
+from dotenv import load_dotenv
 
-TOKEN = 'ODQ0MjM5MTM5MjI5NDAxMTU5.GL8-2c.6Ebmk2gIi9j3EBZiKj6IJB1W1F10P3PTHfbXQE'
+load_dotenv()
+
+TOKEN = os.getenv('DISCORD_TOKEN')
 ROLE_ID = None
 PREFIX = "."
 
